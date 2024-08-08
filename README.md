@@ -1,2 +1,2 @@
- https://ardiaa89.github.io/test2/HTM
- https://ardiaa89.github.io/test2/HT
+ https://ardiaa89.github.io/WEB/HTM
+ https://ardiaa89.github.io/WEB/HT
