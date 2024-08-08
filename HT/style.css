@@ -1,0 +1,174 @@
+body{
+    background-color: #20201d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
+ 
+}
+.b
+{
+   
+    top: 0;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    font-size: 0rem;
+    color: rgba(73, 240, 204, 0.76);
+    opacity: 0;
+    transition: all 3s ease-in-out;
+    animation:scale 1s linear infinite;
+    z-index: 2;
+}
+h2{
+    
+    font-size: 0rem;
+    color: rgba(73, 131, 240, 0.76);
+    opacity: 0;
+    transition: opacity 3s ease-in-out,font-size 3s ease-in-out ;
+    transition:color 1s ease-in-out;
+    animation:scale2 1s linear infinite;
+
+    
+
+}
+#B1{
+    width: 50px;
+    height: 50px;
+    background-color: wheat;
+    border: 10px solid;
+    border-radius: 50%;
+    color: wheat;
+    font-size: 5rem;
+    transform: translateX(-100px);
+   animation: circle 2s linear infinite;
+}
+#B2{
+    width: 50px;
+    height: 50px;
+    background-color: wheat;
+    border: 10px solid;
+    border-radius: 50%;
+    color: wheat;
+    font-size: 5rem;
+    transform: translateX(100px);
+   animation: circle2 2s linear infinite;
+}
+p{
+    color: rgba(123, 194, 235, 0.918);
+    transition: all;
+    animation:rotate 1s linear infinite;
+  
+}
+p span{
+text-decoration: underline;
+color: red;
+
+}
+p:hover{
+    color: cadetblue;
+}
+h2:hover{
+    color: cadetblue;
+}
+ 
+.d{
+    height: 100vh;
+}
+@keyframes rotate{
+ 0%{
+    transform: rotate(0deg);
+ }
+ 25%{
+    transform:rotate(45deg);
+ }
+ 50%{
+    transform: rotate(0deg);
+ }
+ 75%{
+    transform: rotate(-45deg);
+ }
+ 100%{
+    transform: rotate(0deg);
+ }
+
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+       }
+       25%{
+        transform: scale(1.5);
+       }
+       50%{
+        transform: scale(1);
+       }
+       75%{
+           transform: scale(0.5);
+       }
+       100%{
+       transform: scale(1);
+       }
+  
+  }
+  @keyframes scale2{
+    0%{
+     transform: scale(1);
+    }
+    
+    25%{
+     transform: scale(0.5);
+    }
+    50%{
+     transform: scale(1);
+    }
+    75%{
+        transform: scale(1.5);
+    }
+    100%{
+    transform: scale(1);
+    }
+   
+   }
+   @keyframes circle{
+    
+    20%{
+        transform: translateX(-100px);
+    }
+    40%{
+        transform: translateX(0px);
+        
+    }
+    60%{
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(0px);
+    }
+    100%
+    {
+        transform: translateX(-100px);
+    }
+   }
+   @keyframes circle2{
+    
+    20%{
+        transform: translateX(100px);
+    }
+    40%{
+        transform: translateX(0px);
+    }
+    60%{
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(0px);
+    }
+    100%
+    {
+        transform: translateX(100px);
+    }
+   }
